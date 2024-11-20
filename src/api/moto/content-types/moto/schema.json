@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "motos",
+  "info": {
+    "singularName": "moto",
+    "pluralName": "motos",
+    "displayName": "Moto",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Marca": {
+      "type": "string",
+      "required": true
+    },
+    "Modelo": {
+      "type": "string",
+      "required": true
+    },
+    "Ano": {
+      "type": "string",
+      "required": true
+    },
+    "Cor": {
+      "type": "string",
+      "required": true
+    },
+    "FreioDianteiro": {
+      "type": "string",
+      "required": true
+    },
+    "FreioTraseiro": {
+      "type": "string",
+      "required": true
+    },
+    "Imagem": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Marchas": {
+      "type": "integer",
+      "required": true,
+      "default": 5,
+      "max": 7,
+      "min": 4
+    },
+    "Cilindrada": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "Quilometragem": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    }
+  }
+}
