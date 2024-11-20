@@ -382,6 +382,10 @@ export interface ApiMotoMoto extends Struct.CollectionTypeSchema {
   };
   attributes: {
     Ano: Schema.Attribute.String & Schema.Attribute.Required;
+    Categoria: Schema.Attribute.Enumeration<
+      ['Big Trail', 'Custom', 'Scooter', 'Sport', 'Street', 'Trail']
+    > &
+      Schema.Attribute.Required;
     Cilindrada: Schema.Attribute.Integer &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMax<

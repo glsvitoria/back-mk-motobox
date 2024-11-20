@@ -60,6 +60,18 @@
       "type": "decimal",
       "min": 0,
       "required": true
+    },
+    "Categoria": {
+      "type": "enumeration",
+      "enum": [
+        "Big Trail",
+        "Custom",
+        "Scooter",
+        "Sport",
+        "Street",
+        "Trail"
+      ],
+      "required": true
     }
   }
 }
